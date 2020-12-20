@@ -1,0 +1,14 @@
+{
+  "name": "box",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@openzeppelin/contracts": "^3.3.0",
+    "@openzeppelin/test-helpers": "^0.5.9",
+    "chai": "^4.2.0",
+    "ethers": "^5.0.24",
+    "hardhat": "^2.0.6"
+  }
+}
