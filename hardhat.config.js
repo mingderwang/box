@@ -1,7 +1,6 @@
 // hardhat.config.js
 require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-truffle5");
-require("hardhat-deploy-ethers");
 require("hardhat-deploy");
 require("hardhat-deploy-ethers");
 const { privateKey, infuraProjectId, mnemonic, etherscanApiKey } = require('./secrets.json');
@@ -30,6 +29,14 @@ module.exports = {
     },
     goerli: {
       url: `https://goerli.infura.io/v3/${infuraProjectId}`,
+      accounts: [privateKey]
+    },
+    rinkeby: {
+      url: `https://rinkeby.infura.io/v3/${infuraProjectId}`,
+      accounts: [privateKey]
+    },
+    ropsten: {
+      url: `https://ropsten.infura.io/v3/${infuraProjectId}`,
       accounts: [privateKey]
     },
   },
